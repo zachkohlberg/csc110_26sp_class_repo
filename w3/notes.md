@@ -98,4 +98,32 @@ Functions, variables, classes, and other objects have identifiers (names). Ident
   - "1abc" is not a valid identifier
   - "a123" is a valid identifier
 
-TODO: write our own functions and talk more about main
+## Variables
+
+- name associated with a piece of data
+  - can think of them as labeled boxes that you can store data in
+- what can we do with variables?
+  - **declaring** a variable means to create the variable
+  - **initializing** a variable means assigning it an initial value
+  - **assigning** or **reassigning** a value to a variable associates the name with the value
+  - we can use variables in other code, which will retrieve and use whatever value was last assigned to the variable
+
+```java
+// declare a variable: Type name;
+String x;
+
+// assign/reassign a variable: name = value;
+x = "hello";
+
+// use a variable in other code by typing its name
+IO.println(x);
+```
+
+## Input
+
+- `IO.readln(...)` reads user input
+- to use the input, you need to store it in a variable:
+
+```java
+String x = IO.readln(...);
+```
