@@ -3,6 +3,14 @@ void main() {
 	email();
 	// do we actually want to do that? probably not with this program
 	// email();
+	
+	// we can add another level of "indirection" by calling a function that calls
+	// email instead of calling email directly
+	// indirect();
+}
+
+void indirect() {
+	email();
 }
 
 // used to be our main function, but now we want to call it multiple times from
