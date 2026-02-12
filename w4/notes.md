@@ -39,4 +39,22 @@
   - exponents (no exponent operator, so ignore this part)
   - multiplication and division (and modulo)
   - addition and subtraction (and concatenation)
-- 
+
+## Integers and Doubles
+
+- doubles (and floating-point numbers in general) represent approximations of real numbers, not perfectly precise
+  - financial software: bad idea, can't accept this amount of imprecision
+  - physics simulations, game engines: it's fine, we don't need perfect accuracy
+  - you can use integers in some situations, just representing the smallest possible unit
+  - other data types can be used if integers aren't good enough, but these have other drawbacks
+- integers can overflow if they get too large or too small: they will wrap around to the other end of the range of values they can represent (from very large positive number to very large negative number or the other way around)
+- dividing integers will yield integers; result is truncated (everything after decimal is dropped)
+
+## Expressions
+
+- an expression can be evaluated to a single value with a type (such as int, String, etc.)
+- an expression can be something as simple as a single literal or the name of a variable
+- an expression can be much more complex: function calls joined with operators inside other function calls can all form an expression that evaluates to just one number
+- operators and function calls that require operands or arguments of a certain type can take any expression of that type
+- function calls that return a value are expressions
+
