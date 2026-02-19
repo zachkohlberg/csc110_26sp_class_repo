@@ -6,20 +6,29 @@ void main() {
 
     // Calculations
     // Declaring variables without initializing them
-    int sum, difference, product, quotient, remainder;
-    // Initializing declared variables
-    sum = x + y;
-    difference = x - y;
-    product = x * y;
-    quotient = x / y;
-    remainder = x % y;
+    // int sum, difference, product, quotient, remainder;
+    // // Initializing declared variables
+    // sum = x + y;
+    // difference = x - y;
+    // product = x * y;
+    // quotient = x / y;
+    // remainder = x % y;
 
     // Output
-    IO.println("x + y = " + sum);
-    IO.println("x - y = " + difference);
-    IO.println("x * y = " + product);
-    IO.println("x / y = " + quotient);
-    IO.println("x % y = " + remainder);
+    IO.println("x + y = " + (x + y));
+
+    // equivalent to above
+    // IO.print("x + y = ");
+    // IO.println(sum);
+
+    // incorrect
+    // IO.println("x + y = sum");
+    // IO.println("x + y = + sum");
+
+    IO.println("x - y = " + (x - y));
+    IO.println("x * y = " + (x * y));
+    IO.println("x / y = " + (x / y));
+    IO.println("x % y = " + (x % y));
 }
 
 // Questions:
