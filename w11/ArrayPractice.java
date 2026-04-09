@@ -32,7 +32,7 @@ void main() {
 
 int[] createOdd(int n) {
     int[] array = new int[n];
-    for (int i = 0; i < array.length; i = i + 1) {
+    for (int i = 0; i < array.length; i++) {
         array[i] = 2 * i + 1;
     }
     return array;
@@ -40,7 +40,7 @@ int[] createOdd(int n) {
 
 // 2. Increase the value of each integer in an array by 10.
 void increaseBy10(int[] array) {
-    for (int i = 0; i < array.length; i = i + 1) {
+    for (int i = 0; i < array.length; i++) {
         array[i] = array[i] + 10;
     }
 }
@@ -48,7 +48,7 @@ void increaseBy10(int[] array) {
 // 3. Calculate the average of an array of doubles.
 double average(double[] array) {
     double sum = 0;
-    for (int i = 0; i < array.length; i = i + 1) {
+    for (int i = 0; i < array.length; i++) {
         sum = sum + array[i];
     }
     return sum / array.length;
@@ -56,31 +56,25 @@ double average(double[] array) {
 
 // 4. Print the elements of an array as a comma-separated list.
 void printArray(int[] array) {
-    for (int i = 0; i < array.length; i = i + 1) {
+    for (int i = 0; i < array.length; i++) {
         IO.print(array[i] + ", ");
     }
     IO.println();
 }
 
-// TODO: try converting the rest into for loops
-
 void printArray(double[] array) {
-    int i = 0;
-    while (i < array.length) {
+    for (int i = 0; i < array.length; i++) {
         IO.print(array[i] + ", ");
-        i = i + 1;
     }
     IO.println();
 }
 
 // 5. Check whether all numbers in an array are positive.
 boolean checkAllPositive(double[] array) {
-    int i = 0;
-    while (i < array.length) {
+    for (int i = 0; i < array.length; i++) {
         if (array[i] <= 0) {
             return false;
         }
-        i = i + 1;
     }
     return true;
 }
@@ -89,10 +83,8 @@ boolean checkAllPositive(double[] array) {
 //    parsed as ints).
 int[] convertToInts(String[] strings) {
     int[] integers = new int[strings.length];
-    int i = 0;
-    while (i < strings.length) {
+    for (int i = 0; i < strings.length; i++) {
         integers[i] = Integer.parseInt(strings[i]);
-        i = i + 1;
     }
     return integers;
 }
