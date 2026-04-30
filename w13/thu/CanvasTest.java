@@ -1,11 +1,11 @@
 void main() {
     Canvas canvas = new Canvas(3, 2);
-    canvas.setPixel(0, 0, 0xFF0000);
-    canvas.setPixel(1, 0, 0x00FF00);
-    canvas.setPixel(2, 0, 0x0000FF);
-    canvas.setPixel(0, 1, 0xFFFF00);
-    canvas.setPixel(1, 1, 0xFFFFFF);
-    canvas.setPixel(2, 1, 0x000000);
+    canvas.setPixel(0xFF0000, 0, 0);
+    canvas.setPixel(0x00FF00, 1, 0);
+    canvas.setPixel(0x0000FF, 2, 0);
+    canvas.setPixel(0xFFFF00, 0, 1);
+    canvas.setPixel(0xFFFFFF, 1, 1);
+    canvas.setPixel(0x000000, 2, 1);
     canvas.printPPM();
 
     // this should print the same ppm text you saw
